@@ -1,0 +1,9 @@
+img{
+  display: block;
+  aspect-ratio: 1;
+  width: 100%;
+}
+
+.bg-nav{
+  background-color: #333;
+}
