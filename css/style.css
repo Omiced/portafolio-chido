@@ -1,0 +1,105 @@
+:root{
+  --color-neutral-10: #1E1E1E;
+  --color-neutral-90: #E6E1E5;
+  --color-primary-80: #D0BCFF;
+  --color-primary-20: #4F376B;
+  --color-tertiary-30: #633B48;
+  --color-tertiary-90: #FFD8E4;
+  --font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+  min-height: 100vh;
+  background-color: var(--color-neutral-10);
+}
+
+section{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*inicio*/
+
+.inicio{
+  font-family: var(--font-family);
+  height: 100vh;
+}
+.inicio-container{
+  display: grid;
+  place-items:center;
+  padding: 1.25rem;
+  height: 100%;
+}
+.inicio-text{
+  display: grid;
+  color: var(--color-neutral-90);
+  align-self: end;
+  justify-self: center;
+
+}
+.inicio-title, .inicio-subtitle{
+  font-size:  clamp(1.5rem, 6vw, 6rem);
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+}
+.inicio-subtitle{
+  background: -webkit-linear-gradient(var(--color-primary-80), var(--color-primary-20));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.inicio-lista{
+  list-style: none;
+  display:flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content:space-around;
+  justify-self: center;
+  align-self: start;
+  padding: 0;
+}
+
+.inicio-icon{
+  display: block;
+  width: clamp(1.5rem, 6vw, 6rem);
+}
+
+/*sobre mi*/
+.yomero-container{
+  color: var(--color-neutral-90);
+}
+
+.yomero-title{
+  font-size: clamp(2rem, 3vw, 5rem);
+  text-align: center;
+  color: var(--color-primary-80);
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.yomero-text{
+  text-align: justify;
+  font-size:  clamp(1rem, 2.5vw, 1.5rem);
+  line-height: 1.75rem;
+  word-break: break-word;
+}
+
+.yomero-text-habilidades{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  justify-content: center;
+  gap :10px;
+}
+
+h3{
+  font-size:clamp(1.5rem, 3vw, 3rem) ;
+  text-align: center;
+  color: var(--color-tertiary-90)
+}
+
+.tecnicas-container, .suaves-container{
+  border: 2px solid var(--color-primary-20);
+  width: 100%;
+  aspect-ratio: 1;
+}
